@@ -1,7 +1,6 @@
 import mobileNav from "./modules/mobile-nav.js";
 mobileNav();
 //========================================================================================================================================================
-
 import Swiper from "swiper/bundle";
 import "swiper/css/bundle";
 
@@ -80,4 +79,24 @@ $(document).ready(function () {
   closeBtn.click(function () {
     modal.fadeOut();
   });
+});
+//========================================================================================================================================================
+
+import ScrollReveal from "scrollreveal";
+
+ScrollReveal({
+  distance: "60px",
+  duration: 2800
+});
+ScrollReveal().reveal(".header__row", {
+  origin: "top"
+});
+ScrollReveal().reveal(".header__info", {
+  origin: "left"
+});
+ScrollReveal().reveal(".delivery__item", {
+  origin: "left"
+});
+ScrollReveal().reveal(".delivery__img", {
+  origin: "right"
 });
