@@ -167,8 +167,8 @@
   right: 20px;
   top: 20px;
   @media (max-width: 425px) {
-    position: fixed;
-    left: 2px;
+    position: absolute;
+    left: -300px;
     top: 10px;
   }
 }
@@ -181,8 +181,8 @@
   right: 20px;
   top: 20px;
   @media (max-width: 425px) {
-    position: fixed;
-    left: 2px;
+    position: absolute;
+    left: -330px;
     top: 10px;
   }
 }
