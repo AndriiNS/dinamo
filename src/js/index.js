@@ -111,8 +111,7 @@ ScrollReveal().reveal(".delivery__img", {
   origin: "right"
 });
 // //========================================================================================================================================================
-(function ($) {
-  $(window).on("load", function () {
-    $("#loader-wrapper").fadeOut(500);
-  });
-})(jQuery);
+document.addEventListener("DOMContentLoaded", function () {
+  // Сховати завантажувальний екран
+  document.getElementById("loader-wrapper").style.display = "none";
+});
