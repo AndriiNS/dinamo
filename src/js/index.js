@@ -100,3 +100,7 @@ ScrollReveal().reveal(".delivery__item", {
 ScrollReveal().reveal(".delivery__img", {
   origin: "right"
 });
+//========================================================================================================================================================
+$(window).on("load", function () {
+  $("#loader-wrapper").fadeOut(500);
+});
