@@ -2,11 +2,11 @@
 .mobile-nav-btn {
   --time: 0.1s;
 
-  --width: 30px;
+  --width: 40px;
   --height: 30px;
 
-  --line-height: 2.5px;
-  --spacing: 8px;
+  --line-height: 2px;
+  --spacing: 7px;
 
   --color: #fff;
   --radius: 4px;
@@ -22,6 +22,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  display: none;
 }
 
 .nav-icon {
@@ -60,6 +61,7 @@
 
 .nav-icon.nav-icon--active {
   background-color: transparent;
+  z-index: 9999;
 }
 
 .nav-icon.nav-icon--active::before,
@@ -80,16 +82,8 @@
 
 .mobile-nav-btn {
   z-index: 999;
-  display: none;
+
   @media (max-width: 420px) {
     display: block;
-    margin-left: 30px;
-    align-items: center;
   }
 }
-
-// @media (max-width: 1000px) {
-// 	.mobile-nav-btn {
-// 		display: block;
-// 	}
-// }
